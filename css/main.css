@@ -1,0 +1,510 @@
+/*-----------Спецификация-----------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, form, input, a, span, button, blockquote {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+ font-size: 15px;
+ line-height: 1.6em;
+ margin-bottom: 1.6em;
+ font-weight: 400;
+ letter-spacing: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0;
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a {
+	transition: all 0.5s ease;
+}
+
+.btn {
+	width: 200px;
+	background-color: #e84545;
+	text-align: center;
+	color:#fff;
+	line-height: 46px;
+	padding:0;
+	border-radius: 0;
+	border:1px solid transparent;
+}
+
+
+.btn:hover {
+	transition:all 0.5s ease;
+	color:#fff;
+	border:1px solid #e84545;
+	background-color:rgba(128, 9, 9, 0.5);;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+
+.header {
+	background:url(../img/876628-chinatown-cities-cityscapes-new-york-city-streets.jpg.png) no-repeat center top;
+	background-blend-mode: multiply;
+	background-color: rgba(13, 11, 23, 0.78);
+	padding: 42px 0px 240px 0px;
+}
+
+.navigation:after {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color:#53535c;
+	margin-top: -3px;
+}
+
+.logo {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 33px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 400;
+	margin-top:-10px;
+}
+
+.logo span {
+		color: #626fe4;
+		font-weight: 700;
+}
+
+.menu {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	justify-content: flex-end;
+}
+
+.menu__item {
+	padding:0 35px 35px 35px;
+	border-bottom:3px solid rgba(255,255,255,0);
+}
+
+.menu__item:hover {
+	border-bottom:3px solid rgba(255,255,255,.5);
+}
+
+.menu__item:last-child {
+	padding-right: 0;
+}
+
+.menu a {
+	color:#fff;
+}
+
+.offer {
+	margin-top: 183px;
+	text-align: center;
+}
+
+.offer__title {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.offer__text {
+	margin: 0 auto;
+	margin-top: 30px;
+	max-width:560px;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.offer__button {
+	margin-top: 27px;
+}
+
+.features {
+	padding-top: 120px;
+}
+
+.card {
+	color:#000;
+	text-align: center;
+	flex-direction: column;
+	align-items:center;
+	border:none;
+}
+
+.card:nth-child(1) {
+	margin-bottom: 50px;
+}
+
+.card__title {
+	color: #2d3033;
+	margin-top: 30px;
+	margin-bottom: 18px;
+}
+
+.card__text {
+	color: #6c7279;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	max-width: 305px;
+}
+
+.card__img {
+	height: 65px;
+	width: 80px;
+}
+
+.card__img_43 {
+	background: url(../img/Layer_43.png) center no-repeat;
+}
+
+.card__img_44 {
+	background: url(../img/Layer_44.png) center no-repeat;
+}
+
+.card__img_45 {
+	background: url(../img/Layer_45.png) center no-repeat;
+}
+
+.card__img_46 {
+	background: url(../img/Layer_46.png) center no-repeat;
+}
+
+.card__img_47 {
+	background: url(../img/Layer_47.png) center no-repeat;
+}
+
+.card__img_48 {
+	background: url(../img/Layer_48.png) center no-repeat;
+}
+
+.gallery {
+	padding-top: 48px;
+	padding-bottom: 100px;
+}
+
+.project {
+	position: relative;
+	max-width: 270px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.project:hover .project__background {
+	opacity: 1;
+	transition:1s ease;
+}
+
+.project img {
+	width: 100%;
+	display: block;
+}
+
+.project__background {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-color: rgba(232, 69, 69, 0.9);
+	color:#fff;
+	justify-content:center;
+	flex-direction: column;
+	opacity:0;
+}
+
+.project__text {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.team {
+	padding-top: 125px;
+	padding-bottom: 118px;
+	background-color: rgba(98, 111, 228, 0.09);
+}
+
+
+.person img {
+	display: block;
+	width: 100%;
+	max-width: 270px;
+}
+
+.person__title {
+	color: #2d3033;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 28px;
+	margin-bottom: 7px;
+}
+
+.person__position {
+	color: #e84545;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.person__text {
+	color: #6c7279;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.person__social {
+	margin-top: 25px;
+}
+
+.person__item {
+	transition: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #e8ecee;
+	margin-right: 4px;
+}
+
+.person__item:hover {
+	transition: all 0.5s ease;
+	background-color: #e84545;
+}
+
+.person__item:last-child {
+	margin-right: 0;
+}
+
+.person__item_fb {
+	background:#fff url(../img/fb.png) center no-repeat;
+}
+
+.person__item_tw {
+	background:#fff url(../img/tw.png) center no-repeat;
+}
+
+.person__item_in {
+	background:#fff url(../img/in.png) center no-repeat;
+}
+
+.true {
+	color:#000;
+}
+
+.container-fluid__plain {
+	padding:0;
+}
+
+.woman {
+	max-width: 950px;
+	height: 500px;
+	background: url(../img/Woman.png) center right /cover;
+}
+
+.quote {
+	height:500px;
+	flex-direction: column;
+	background-color: #53354a;
+	color: #ffffff;
+	justify-content: center;
+	padding:0 8%;
+}
+
+.quote blockquote {
+	max-width: 500px;
+	font-size: 34px;
+	font-style: italic;
+	line-height: 1.2em;
+	letter-spacing: 0;
+}
+
+.quote__man {
+	text-align: left;
+	margin-top: 37px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 21px;
+	text-transform: uppercase;
+
+}
+
+.ready {
+	padding: 100px 0;
+	color: #2d3033;
+	text-align: center;
+}
+
+.start__title {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.3em;
+	text-transform: none;
+}
+
+.start__text {
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+.start__button {
+	width: 280px;
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 46px;
+	text-transform: uppercase;
+}
+
+.start__button:hover {
+	border-color: #343434;
+	background-color: rgba(84, 3, 3, 0.8);;
+}
+
+.footer {
+	background-color: #3a3e64;
+	padding:87px 0 0;
+	text-align: center;
+}
+
+.footer:after {
+	content: '';
+	display: block;
+	height: 12px;
+	background-color: #313454;
+	margin-top: 87px;
+}
+
+.info__title {
+ margin-bottom: 10px;
+}
+
+.info__text {
+	margin: 0;
+	color: #808080;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.6em;
+}
+
+.info__text .red {
+	color: #e84545;
+}
+
+.info__text .white {
+	color:#fff;
+}
+
+@media screen and (max-width: 992px) {
+	.logo {
+		text-align: center;
+	}
+	.menu {
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.menu__item:last-child {
+		padding-right: 35px;
+	}
+	.team {
+		text-align: center;
+	}
+	.team img {
+		margin: 0 auto;
+	}
+	.person {
+		margin-bottom: 40px;
+	}
+	.person__social {
+		justify-content:center;
+	}
+	.quote {
+		padding:0 10%;
+	}
+	.quote blockquote {
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		margin-bottom: 20px;
+	}
+	.info {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		max-width: 90%;
+	}
+	.footer {
+		padding:60px 0 0;
+	}
+	.footer:after {
+		margin-top: 30px;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.offer {
+		margin-top: 120px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+	}
+
+	.offer__text {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	.quote blockquote {
+		font-size: 25px;
+	}
+
+	.quote__man {
+		font-size: 11px;
+	}
+}
